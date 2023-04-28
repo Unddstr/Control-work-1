@@ -23,3 +23,21 @@ string[] symbol(string[] arrString)
     }
     return result;
 }
+void printArr(string[] arrString)
+{
+    Console.Write("[");
+    for (int i = 0; i < arrString.Length; i++)
+    {
+        if (i < arrString.Length - 1)
+        {
+            Console.Write($"\"{arrString[i]}\", ");
+        }
+        else
+        {
+            Console.Write($"\"{arrString[i]}\"");
+        }
+    }
+    Console.Write("]");
+}
+string[] newArr = symbol(arrString);
+printArr(newArr);
